@@ -32,7 +32,7 @@ main {
     padding-right: 0;
 }
 
-.movie-list {
+.container-movies .movie-list {
     width: 100%;
     /* background-color: bisque; */
     /* border: 0.1rem solid black; */
@@ -52,6 +52,8 @@ main {
     font-weight: bold;
     grid-column: 1 / -1;
     position: fixed;
+    border-left: 0.3rem solid red;
+    padding-left: 1rem;
 }
 
 .container-movies .movie-list .movie {
@@ -130,19 +132,25 @@ main {
 	-webkit-box-shadow: inset 0 0 .2rem rgb(0, 0, 0);
 	background-color: #ffffff;
 }
-figure {
-    width: 100%;
-    height: auto;
-    margin: 3rem auto;
-}
 
 .left-container {
     display: flex;
     width: 10vw;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     height: 100vh;
     flex-wrap: wrap;
     padding: 2rem;
+}
+
+.left-container figure {
+    width: 100%;
+    height: auto;
+    margin: 3rem auto;
+    margin-bottom: 0;
+}
+
+.left-container img {
+    width: 3rem;
 }
 
 .left-container-top, .left-container-bottom{
@@ -159,6 +167,10 @@ figure {
 
 .left-container-bottom {
     flex-direction: column-reverse;
+}
+
+.left-container .left-container-bottom figure {
+    margin-bottom: 3rem;
 }
 
 
