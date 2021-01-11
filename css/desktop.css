@@ -7,12 +7,110 @@
 
 html {
     font-size: 62.5%;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 main {
     width: 100vw;
     height: 100vh;
 }
+
+
+header {
+    width: 100vw;
+    background-color: #0c082e;
+}
+
+.container-header {
+    width: 100%;
+    padding: 2rem;
+    display: grid;
+    grid-template: 1fr / 30% 50% 20%;
+    align-items: center;
+    min-width: 300px;
+}
+
+.container-header .container-logo {
+    margin-left: 4rem;
+    justify-content: start;
+    display: flex;
+    align-items: center;
+}
+
+.container-header .container-logo .logo {
+    width: 4rem;
+    margin-right: 1rem;
+}
+
+.container-header .container-logo .logo img {
+    width: 100%;
+}
+
+.container-header .container-logo span {
+    font-size: 3rem;
+    color: white;
+}
+
+.container-input {
+    width: 60%;
+    min-width: 30rem;
+    height: 3rem;
+    justify-self: center;
+    border: 0.1rem solid rgb(151, 151, 151);
+    border-radius: 1rem;
+    display: flex;
+    background-color: white;
+}
+
+.container-input .input {
+    margin-left: 2rem;
+    width: 100%;
+    outline: none;
+    font-size: 1.4rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    border: 0;
+}
+
+.container-input .button-search {
+    margin: auto 1rem;
+    cursor: not-allowed;
+}
+
+.menu-user {
+    display: flex;
+    justify-self: end;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.menu-user .info-user {
+    width: 80%;
+    font-size: 1.4rem;
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu-user .info-user span {
+    margin-right: 1rem;
+    width: 80%;
+    text-align: right;
+    color: white;
+}
+
+.menu-user .info-user img {
+    border-radius: 50%;
+    border: 0.1rem solid white;
+    width: 4rem;
+}
+
+.menu-user img {
+    width: 2rem;
+}
+
+
 
 .container-movies h1 {
     text-transform: uppercase;
@@ -136,7 +234,7 @@ main {
 .left-container {
     display: flex;
     width: 10vw;
-    /* background-color: aquamarine; */
+    background-color: #0c082e;
     height: 100vh;
     flex-wrap: wrap;
     padding: 2rem;
@@ -156,7 +254,6 @@ main {
 .left-container-top, .left-container-bottom{
     width: 100%;
     height: 50%;
-    background-color: aqua;
     display: flex;
     text-align: center;
 }
@@ -172,6 +269,3 @@ main {
 .left-container .left-container-bottom figure {
     margin-bottom: 3rem;
 }
-
-
-

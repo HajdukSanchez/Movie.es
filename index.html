@@ -8,8 +8,35 @@
         <meta name='description' content='Description about the web page'>
         <title>Movie.es | Curso CSS Grid Layout - Platzi</title>
         <link rel='stylesheet' href='./css/desktop.css'>
+        <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width: 768px)">
+        <link rel="stylesheet" href="./css/tablet.css" media="screen and (max-width: 1024px)">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;900&display=swap" rel="stylesheet">
     </head>
     <body>
+    <body>
+        <header>
+            <section class="container-header">
+                <div class="container-logo">
+                    <section class="logo">
+                        <img src="./images/001-popcorn.svg" alt="Logo">
+                    </section>
+                    <span>Movie.es</span>
+                </div>
+                <div class="container-input">
+                    <input type="text" class="input" placeholder="Search movie or favorite actor" title="Search">
+                    <span class="button-search">
+                        <img src="">
+                    </span>
+                </div>
+                <div class="menu-user">
+                    <label for="image-user" class="info-user">
+                        <span>Jozek Hajduk</span>
+                        <img src="https://lh3.googleusercontent.com/ogw/ADGmqu_oESw-R4r2HrlxwyeTwDT2VhuBAYdX1PVQKtiuJzI=s32-c-mo" id="image-user">
+                    </label>
+                    <img src="./images/002-arrow-down-sign-to-navigate.svg" alt="Menu" class="menu-nav">
+                </div>
+            </section>
+        </header>
         <main>
             <section class="left-container">
                 <div class="left-container-top">
