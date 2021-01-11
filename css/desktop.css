@@ -10,20 +10,34 @@ html {
     font-family: 'Noto Sans JP', sans-serif;
 }
 
-main {
-    width: 100vw;
+body {
+    /* width: 100vw; */
+    height: 6vh;
+    display: grid;
+    grid-template: auto 1fr / 1fr;
+    grid-template-areas:
+        "header header"
+        "container-movies container-movies";
     height: 100vh;
 }
 
-
 header {
-    width: 100vw;
-    background-color: #0c082e;
+    /* width: 100vw; */
+    height: 6vh;
+    background-color: #0e0a2b;
+    grid-area: header;
+}
+
+main {
+    /* width: 100vw; */
+    height: 94vh;
+    grid-area: container-movies;
+    background-color: #0d0825;
 }
 
 .container-header {
     width: 100%;
-    padding: 2rem;
+    padding: 1rem 2rem;
     display: grid;
     grid-template: 1fr / 30% 50% 20%;
     align-items: center;
@@ -31,14 +45,14 @@ header {
 }
 
 .container-header .container-logo {
-    margin-left: 4rem;
+    /* margin-left: 4rem; */
     justify-content: start;
     display: flex;
     align-items: center;
 }
 
 .container-header .container-logo .logo {
-    width: 4rem;
+    width: 3rem;
     margin-right: 1rem;
 }
 
@@ -47,15 +61,15 @@ header {
 }
 
 .container-header .container-logo span {
-    font-size: 3rem;
+    font-size: 1.8rem;
     color: white;
 }
 
 .container-input {
-    width: 60%;
+    /* width: 40%; */
     min-width: 30rem;
-    height: 3rem;
-    justify-self: center;
+    height: auto;
+    justify-self: flex-end;
     border: 0.1rem solid rgb(151, 151, 151);
     border-radius: 1rem;
     display: flex;
@@ -63,10 +77,10 @@ header {
 }
 
 .container-input .input {
-    margin-left: 2rem;
+    margin-left: 1rem;
     width: 100%;
     outline: none;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-family: 'Noto Sans JP', sans-serif;
     border: 0;
 }
@@ -81,13 +95,12 @@ header {
     justify-self: end;
     align-items: center;
     width: 100%;
-    cursor: pointer;
 }
 
 .menu-user .info-user {
     width: 80%;
-    font-size: 1.4rem;
-    margin-right: 2rem;
+    font-size: 1.2rem;
+    margin-right: 1rem;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -102,32 +115,26 @@ header {
 
 .menu-user .info-user img {
     border-radius: 50%;
-    border: 0.1rem solid white;
-    width: 4rem;
+    /* border: 0.1rem solid white; */
+    width: 3rem;
 }
 
 .menu-user img {
-    width: 2rem;
-}
-
-
-
-.container-movies h1 {
-    text-transform: uppercase;
+    width: 1.3rem;
 }
 
 .container-movies {
-    width: 90vw;
-    height: 90vh;
+    /* width: 90vw; */
+    height: 91vh;
     display: grid;
     gap: 1rem;
     grid-template: repeat(3, 1fr) / 100%;
     /* background-color: aquamarine; */
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 2rem;
-    padding-right: 0;
+    /* position: absolute; */
+    /* bottom: 0;
+    right: 0; */
+    padding: 2rem 0 0 2rem;
+    /* padding-right: 0; */
 }
 
 .container-movies .movie-list {
@@ -146,18 +153,19 @@ header {
 }
 
 .container-movies .movie-list .title {
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: bold;
     grid-column: 1 / -1;
     position: fixed;
     border-left: 0.3rem solid red;
     padding-left: 1rem;
+    color: white;
 }
 
 .container-movies .movie-list .movie {
     /* background-color: red; */
     width: 40rem;
-    height: 18rem;
+    height: 22rem;
     grid-row: 2 / 3;
     align-self: flex-end;
     border-radius: 0.8rem;
@@ -195,7 +203,13 @@ header {
     text-align: justify;
 }
 
-.container-movies .movie-list .movie-overlay:hover {
+.container-movies .movie:hover {
+    box-shadow: 1px -14px 21px -14px rgba(153, 153, 153, 0.78);
+    align-self: center;
+    /* margin-bottom: 1rem; */
+}
+
+.container-movies .movie-list .movie:hover .movie-overlay{
     background-color: rgba(15, 28, 92, 0.5);
     color: white;
 }
@@ -214,14 +228,15 @@ header {
 .container-movies .movie-list::-webkit-scrollbar-track {
 	-webkit-box-shadow: inset 0 0 6px rgba(27, 49, 121, 1);
 	border-radius: 10px;
-	background-color: #F5F5F5;
+	background-color: #0d0825;
 }
 
 /* Diseño externo del scrollbar */
 .container-movies .movie-list::-webkit-scrollbar {
     /* width: 6px; */
     height: .7rem;
-	background-color: #ffffff;
+    background-color: #0d0825;
+    border: 0;
 }
 
 /* Diseño interno del scrollbar */
