@@ -130,3 +130,36 @@ main {
 	-webkit-box-shadow: inset 0 0 .2rem rgb(0, 0, 0);
 	background-color: #ffffff;
 }
+figure {
+    width: 100%;
+    height: auto;
+    margin: 3rem auto;
+}
+
+.left-container {
+    display: flex;
+    width: 10vw;
+    background-color: aquamarine;
+    height: 100vh;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.left-container-top, .left-container-bottom{
+    width: 100%;
+    height: 50%;
+    background-color: aqua;
+    display: flex;
+    text-align: center;
+}
+
+.left-container-top {
+    flex-direction: column;
+}
+
+.left-container-bottom {
+    flex-direction: column-reverse;
+}
+
+
+
