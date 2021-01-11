@@ -1,0 +1,16 @@
+.container-header {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container-input {
+    /* width: auto; */
+    display: none;
+}
+
+.menu-user .info-user {
+    justify-content: flex-end;
+}
+
+.menu-user .info-user span {
+    display: none;
+}

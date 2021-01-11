@@ -66,8 +66,8 @@ main {
 }
 
 .container-input {
-    /* width: 40%; */
-    min-width: 30rem;
+    width: 30rem;
+    /* min-width: 30rem; */
     height: auto;
     justify-self: flex-end;
     border: 0.1rem solid rgb(151, 151, 151);
@@ -103,7 +103,6 @@ main {
     margin-right: 1rem;
     display: flex;
     align-items: center;
-    cursor: pointer;
 }
 
 .menu-user .info-user span {
@@ -117,6 +116,7 @@ main {
     border-radius: 50%;
     /* border: 0.1rem solid white; */
     width: 3rem;
+    cursor: pointer;
 }
 
 .menu-user img {
