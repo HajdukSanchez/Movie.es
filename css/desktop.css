@@ -13,3 +13,79 @@ main {
     width: 100vw;
     height: 100vh;
 }
+
+.container-movies {
+    width: 90vw;
+    height: 90vh;
+    display: grid;
+    gap: 1rem;
+    grid-template: repeat(3, 1fr) / 100%;
+    background-color: aquamarine;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 2rem;
+}
+
+.movie-list {
+    width: 100%;
+    background-color: bisque;
+    border: 0.1rem solid black;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template: auto 1fr / auto;
+    overflow: hidden;
+    gap: 0.3rem;
+}
+
+.movie-list:hover {
+    overflow-x: scroll;
+}
+
+.container-movies .movie-list .title {
+    font-size: 2rem;
+    font-weight: bold;
+    grid-column: 1 / -1;
+    position: fixed;
+}
+
+.container-movies .movie-list .movie {
+    background-color: red;
+    width: 50rem;
+    height: 85%;
+    grid-row: 2 / 3;
+    align-self: flex-end;
+    border-radius: 0.8rem;
+    position: relative;
+    margin-bottom: .3rem;
+}
+
+.container-movies .movie-list .movie:first-of-type {
+    margin-left: .3rem;
+}
+
+.container-movies .movie-list {
+
+}
+
+.container-movies .movie-list .movie-overlay {
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    background-color: blue;
+    bottom: 0;
+    padding: 2rem;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    /* display: none; */
+}
+
+
+.container-movies .movie-list .movie-overlay h1 {
+    /* margin-bottom: 1em; */
+    font-size: 2em;
+}
+
+.container-movies .movie-list .movie-overlay p {
+    font-size: 1em;
+}
