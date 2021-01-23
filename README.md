@@ -8,6 +8,7 @@
 ### Links
 * [Platzi](https://platzi.com/)
 * [Course](https://platzi.com/clases/css-grid-layout-2017/)
+* [Challenge 2](https://github.com/HajdukSanchez/Platzi-Video)
 
 ### By
 Jozek Andrzej Hajduk Sánchez.
